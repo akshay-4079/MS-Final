@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <script data-require="angular.js@~1.2.0" data-semver="1.2.28" src="https://code.angularjs.org/1.2.28/angular.js"></script>
+    <script data-require="angular-route@1.2.0" data-semver="1.2.0" src="https://code.angularjs.org/1.2.0/angular-route.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>QUnit Example</title>
+  <link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.9.1.css">
+    <script src="https://code.jquery.com/qunit/qunit-2.9.1.js"></script>
+    <script src="MSEasy%20test.js"></script>
+ <script ng-controller="MSEasy">
+        QUnit.test("Testing The Program on Easy",function(assert){
+         var a = {};
+    a.rows = [];
+            var minecount=11;
+    for(var i = 0; i < 9; i++) {
+        var row = {};
+        row.spots = [];
+        
+        for(var j = 0; j < 9; j++) {
+            var spot = {};
+            spot.isCovered = true;
+            spot.content = "empty";
+            row.spots.push(spot);
+        }
+        
+        a.rows.push(row);
+    }
+var b;
+            assert.equal(placeRandomMine(a),1,"Mine Placed");
+            assert.equal(placeManyRandomMines(a),10,"Mine Number");
+          assert.notEqual(createMinefield(),a,"Check for mine Placement");
+            assert.equal(hasWon(a),false,'winning Logic');
+                   })
+    </script>
+    </head>
+<body>
+  <div id="qunit"></div>
+  <div id="qunit-fixture"></div>
+   
+</body>
+</html>
+s

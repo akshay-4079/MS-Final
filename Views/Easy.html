@@ -1,0 +1,35 @@
+    <div>
+        <div class="column" style="margin-top: 200px">
+        <h1 style="color: aliceblue;display:block;width: 100%;text-align: center">{{mode}}
+           <br>
+            {{score}}
+            <br>
+            {{score2}}
+            </h1>
+      <p ng-if="isWinMessageVisible&&!hasLostMessageVisible" style="color: aliceblue">You won!</h1>
+        <p ng-if="hasLostMessageVisible" style="color: aliceblue;text-align: center">You Lost!<br><button ng-click="show(minefield)" style="width:100px;height: 40px;font-size: 20px;margin-bottom: 40px" >Show All</button><br><a href="#/main"><button style="width:100px;height: 40px;font-size: 20px;margin-bottom: 40px" >Try Again</button></a></h1>
+</div>
+
+        <div class="column" style="margin-top: 200px">
+
+
+    <table class="minefield" style="float: left" >
+        <tr ng-repeat="row in minefield.rows">
+            <td ng-repeat="spot in row.spots" ng-click="uncoverSpot(spot)">
+                <img ng-if="spot.isCovered" src="assets/module-led-eteint-300x298.gif" class="animated pulse delay-2s infinite" >
+                <img ng-if="!spot.isCovered && spot.content == 'empty'" src="assets/0.png" >
+                <img ng-if="!spot.isCovered && spot.content == 'mine'" src="assets/bmb.png" />
+                <img ng-if="!spot.isCovered && spot.content == 1" src="assets/1.png" >
+                <img ng-if="!spot.isCovered && spot.content == 2" src="assets/2.png" >
+                <img ng-if="!spot.isCovered && spot.content == 3" src="assets/3.png" >
+                <img ng-if="!spot.isCovered && spot.content == 4" src="assets/4.png" >
+                <img ng-if="!spot.isCovered && spot.content == 5" src="assets/5.png" >
+                <img ng-if="!spot.isCovered && spot.content == 6" src="assets/6.png" >
+                <img ng-if="!spot.isCovered && spot.content == 7" src="assets/7.png" >
+                <img ng-if="!spot.isCovered && spot.content == 8" src="assets/8.png" >
+            </td>
+        </tr>
+    </table>
+</div>
+    </div>
+  

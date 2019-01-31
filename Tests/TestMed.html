@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>QUnit Example</title>
+  <link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.9.1.css">
+    <script src="https://code.jquery.com/qunit/qunit-2.9.1.js"></script>
+    <script src="MSMed%20test.js"></script>
+ <script ng-controller="MSMed">
+        QUnit.test("Testing The Program on Medium",function(assert){
+         var a = {};
+    a.rows = [];
+            var minecount=11;
+    for(var i = 0; i < 9; i++) {
+        var row = {};
+        row.spots = [];
+        
+        for(var j = 0; j < 9; j++) {
+            var spot = {};
+            spot.isCovered = true;
+            spot.content = "empty";
+            row.spots.push(spot);
+        }
+        
+        a.rows.push(row);
+    }
+var b;
+            assert.equal(placeRandomMine(a),1,"Mine Placed");
+            assert.equal(placeManyRandomMines(a),15,"Mine No");
+          assert.notEqual(createMinefield(),a,"Check for mine Placement");
+            assert.equal(hasWon(a),false,'winning Logic');
+                   })
+    </script>
+    </head>
+<body>
+  <div id="qunit"></div>
+  <div id="qunit-fixture"></div>
+   
+</body>
+</html>
