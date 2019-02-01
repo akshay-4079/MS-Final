@@ -1,18 +1,24 @@
     <div>
-        <div class="column" style="margin-top: 200px">
+        <div class="column" style="margin-top: 200px;width: 30%">
         <h1 style="color: aliceblue;display:block;width: 100%;text-align: center">{{mode}}
            <br>
-            {{score}}
+            <button type="button" class="btn btn primary" style="padding: 0px" ng-click="song()"><img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Speaker_Icon.svg" style="height: 20px;width: 20px;opacity: 0.9;padding: 0px"></button>
+   
+            <button type="button" class="btn btn primary" ng-click="stop()" style="padding: 0px"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Mute_Icon.svg/2000px-Mute_Icon.svg.png" style="height: 20px;width: 20px;opacity: 
+            0.9"></button>
             <br>
-            {{score2}}
+            {{score}}
+           <div ng-if="counter>=0 && Modename==Timed" style="color: aliceblue;display:block;width: 100%;text-align: center">
+    {{counter}}
+            </div>
             </h1>
       <p ng-if="isWinMessageVisible&&!hasLostMessageVisible" style="color: aliceblue">You won!</h1>
         <p ng-if="hasLostMessageVisible" style="color: aliceblue;text-align: center">You Lost!<br><button ng-click="show(minefield)" style="width:100px;height: 40px;font-size: 20px;margin-bottom: 40px" >Show All</button><br><a href="#/main"><button style="width:100px;height: 40px;font-size: 20px;margin-bottom: 40px" >Try Again</button></a></h1>
 </div>
 
-        <div class="column" style="margin-top: 200px">
+        <div class="column" style="margin-top: 100px;width: 70%">
 
-
+            
     <table class="minefield" style="float: left" >
         <tr ng-repeat="row in minefield.rows">
             <td ng-repeat="spot in row.spots" ng-click="uncoverSpot(spot)">

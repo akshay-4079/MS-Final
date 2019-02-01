@@ -2,15 +2,42 @@
 (function(){
 
 var app= angular.module("UIX");
-var MSEasy=function($scope,BGDService,GamePlay) {
+var MSEasy=function($scope,BGDService,GamePlay,$timeout) {
 $scope.minefield = GamePlay.createMinefield();
     var bgm= new BGDService.makesound(Song);
     var bom= new BGDService.makesound("assets/Explosion+3.mp3");
     bgm.play();
+    
     $scope.mode=ModeName +' Mode';
 $(window).on('popstate', function() {
 		  bgm.stop();
 		});
+$scope.song=function()
+{
+    bgm.stop();
+    var Songs=["/Assets/Bgm.mp3","Assets/HT.mp3","/Assets/MT.mp3","/Assets/TS.mp3"]
+    var min=0; 
+    var max=4;  
+    var random =Math.floor(Math.random() * (+max - +min)) + +min; 
+var Song1=Songs[random];
+    var b2m= new BGDService.makesound(Song1);
+    
+    bgm=b2m;
+    bgm.play();
+}
+$scope.stop=function()
+{
+    bgm.stop();
+}
+    var counter=$scope.counter;
+    if(ModeName==='Timed'){
+            $scope.counter=5;
+    $scope.onTimeout = function(){
+        $scope.counter--;
+        mytimeout = $timeout($scope.onTimeout,1000);
+    }
+    var mytimeout = $timeout($scope.onTimeout,1000);
+    }
 $scope.show=function(minefield)
             {
                 for(var a=0;a<9;a++)
@@ -36,7 +63,7 @@ $scope.uncoverSpot = function(spot) {
         }
         }
         spot.isCovered = false;
-        if(spot.content == "mine") {
+        if(spot.content == "mine" || $scope.counter<0) {
             $scope.hasLostMessageVisible = true;
            if(count==0)
                {

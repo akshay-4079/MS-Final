@@ -3,10 +3,13 @@ var counterl=0;
 var curScore=0;
 var hiScore=0;
 var basScore=100;
-var mines=0;
-var ModeName='Easy';
+var mines=localStorage.getItem("mines");
+var multiplier=localStorage.getItem("multiplier");
+var Song=localStorage.getItem("Song");
+    
+var ModeName=localStorage.getItem("mode");
+    
 var multiplier=0.7;
-var Song="/Assets/Bgm.mp3";
 var GameState=0;
 
 
