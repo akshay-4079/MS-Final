@@ -15,12 +15,13 @@ $(window).on('popstate', function() {
 $scope.song=function()
 {
     bgm.stop();
-    var Songs=["/Assets/Bgm.mp3","Assets/HT.mp3","/Assets/MT.mp3","/Assets/TS.mp3"]
+    var Songs=["Bgm","HT","MT","TS","M5","M6"]
     var min=0; 
-    var max=4;  
+    var max=6;  
     var random =Math.floor(Math.random() * (+max - +min)) + +min; 
 var Song1=Songs[random];
-    var b2m= new BGDService.makesound(Song1);
+    var srcstring="/Assets/"+Song1+".mp3";
+    var b2m= new BGDService.makesound(srcstring);
     
     bgm=b2m;
     bgm.play();

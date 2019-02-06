@@ -1,6 +1,3 @@
-
-body {
-
 .screen-reader {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
@@ -8,8 +5,7 @@ body {
 }
 
 body {
-  background: black url('https://images.pexels.com/photos/1040499/pexels-photo-1040499.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') no-repeat;
-
+ 
   padding: 0;
   margin: 0;
 }
@@ -132,16 +128,20 @@ a.tileLink {
   height:50px;
     padding: 2px;
 }
-.playarea{
-    background-image: url("https://ak3.picdn.net/shutterstock/videos/3224983/thumb/1.jpg");
+#area{
+    background-image: url("Assets/BG1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-position: fixed;
-    overflow: scroll;
+    background-position: bottom;
+    position:fixed;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     width: 100%;
     height:100%;
-    overflow: hidden;
+    overflow:scroll;
+    margin-bottom: 100px;
 }
 .NavBar {
     margin-bottom: 500px;
@@ -183,12 +183,8 @@ margin-top: 40px;
   width: 50%;
 }
 
-/* Clear floats after the columns */
 .playarea:after {
   content: "";
   display: table;
   clear: both;
 }
-
-}
-

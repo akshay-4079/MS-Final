@@ -6,7 +6,7 @@ var basScore=100;
 var mines=localStorage.getItem("mines");
 var multiplier=localStorage.getItem("multiplier");
 var Song=localStorage.getItem("Song");
-    
+
 var ModeName=localStorage.getItem("mode");
     
 var multiplier=0.7;
@@ -28,10 +28,7 @@ var GameState=0;
         templateUrl:"Views/Easy.html",
         controller:"MSEasy"
     })
-         .when("/Time",{
-        templateUrl:"Views/Timed.html",
-        controller:"MSTim"
-    })
+         
         
           .otherwise({redirectTo:"/main"}) 
     
