@@ -39,7 +39,7 @@ All the other functions are coded as services.
 
 The initial wireframes are shown as follows.
 
-![Opening Screen](https://github.com/akshay-4079/MS-Final/blob/master/Assets/Wireframes/Opening%20Screen-9512133.jpg?raw=true
+![Opening Screen](https://github.com/akshay-4079/MS-Final/blob/master/Assets/Wireframes/Opening%20Screen-9512133.jpg)
 
 ![PlayArea (https://github.com/akshay-4079/MS-Final/blob/master/Assets/Wireframes/PlayArea%20(1)-9512453.png?raw=true)
 
