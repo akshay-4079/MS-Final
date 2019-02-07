@@ -41,13 +41,13 @@ The initial wireframes are shown as follows.
 
 ![Opening Screen](https://github.com/akshay-4079/MS-Final/blob/master/Assets/Wireframes/Opening%20Screen-9512133.jpg)
 
-![PlayArea (https://github.com/akshay-4079/MS-Final/blob/master/Assets/Wireframes/PlayArea%20(1)-9512453.png?raw=true)
+![PlayArea (https://github.com/akshay-4079/MS-Final/blob/master/Assets/Wireframes/PlayArea%20(1)-9512453.png)
 
 
 
 ## Interaction Between Various Elements
 
-![Untitled Diagram](./Assets/Wireframes/Untitled Diagram.jpg)
+![Untitled Diagram](https://github.com/akshay-4079/MS-Final/blob/master/Assets/Wireframes/Untitled%20Diagram.jpg)
 
 # Code
 
@@ -415,6 +415,6 @@ $scope.uncoverSpot = function(spot) {
 
 # Final App Screens
 
-![Screen Shot 2019-02-06 at 10.32.14 PM](/Users/akshay.srikumar/Desktop/MinesweeperFinal/Assets/Wireframes/Screen Shot 2019-02-06 at 10.32.14 PM.png)
+![Screen Shot 2019-02-06 at 10.32.14 PM](https://github.com/akshay-4079/MS-Final/blob/master/Assets/Wireframes/Screen%20Shot%202019-02-06%20at%2010.32.14%20PM.png)
 
-![Screen Shot 2019-02-06 at 10.32.20 PM](/Users/akshay.srikumar/Desktop/MinesweeperFinal/Assets/Wireframes/Screen Shot 2019-02-06 at 10.32.20 PM.png)
+![Screen Shot 2019-02-06 at 10.32.20 PM](https://github.com/akshay-4079/MS-Final/blob/master/Assets/Wireframes/Screen%20Shot%202019-02-06%20at%2010.32.20%20PM.png)
