@@ -39,15 +39,15 @@ All the other functions are coded as services.
 
 The initial wireframes are shown as follows.
 
-![Opening Screen](/Users/akshay.srikumar/Desktop/MinesweeperFinal/Assets/Wireframes/Opening Screen-9512448.jpg)
+![Opening Screen](.Assets/Wireframes/Opening Screen-9512448.jpg)
 
-![PlayArea (/Users/akshay.srikumar/Desktop/MinesweeperFinal/Assets/Wireframes/PlayArea (1)-9512453.png)](/Users/akshay.srikumar/Downloads/PlayArea (1).png)
+![PlayArea (./Assets/Wireframes/PlayArea (1)-9512453.png)](/Users/akshay.srikumar/Downloads/PlayArea (1).png)
 
 
 
 ## Interaction Between Various Elements
 
-![Untitled Diagram](/Users/akshay.srikumar/Desktop/MinesweeperFinal/Assets/Wireframes/Untitled Diagram.jpg)
+![Untitled Diagram](./Assets/Wireframes/Untitled Diagram.jpg)
 
 # Code
 
