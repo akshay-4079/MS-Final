@@ -1,3 +1,6 @@
+Author:Akshay.S
+
+
 # About the App
 
 This is a recreation of the popular windows game Minecraft rebuilt using AngularJs. Other tools used are HTML 5, CSS.
